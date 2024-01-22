@@ -1,10 +1,8 @@
 import { Box, Container } from "@mui/material";
 import style from "./style.module.css";
-type ISidebar = {
-    test: string;
-}
 
-export const Sidebar = ({test}:ISidebar) => {
+
+export const Sidebar = () => {
     return(<Container className={`${style.sidebarBox}`}>
         <Box className={`${style.sidebarBox}`}>
             <header className={`${style.sidebarHeader}`}>
