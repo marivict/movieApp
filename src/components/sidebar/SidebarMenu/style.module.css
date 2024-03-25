@@ -1,0 +1,41 @@
+.sidebarMenu {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    position: relative;
+}
+.sidebarMenu__icon__container{
+    padding-left: 40px;
+}
+.sidebarMenu__icon__container :global .sidebarMenu__icon{
+    color:  #fff;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+.sidebarMenu__link {
+    font-size: 28px!important;
+    color: #fff!important;
+}
+
+.sidebarMenu.active {
+    background-color: #0b0b0b;
+}
+
+.sidebarMenu.active :global .sidebarMenu__icon{
+    color:#2548C6;
+}
+
+.sidebarMenu.active .sidebarMenu__link {
+    color:#2548C6!important;
+}
+
+.sidebarMenu.active::before {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #2548C6;
+    position: absolute;
+    left: 0;
+    top:0;
+}
