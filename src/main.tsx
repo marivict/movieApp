@@ -2,12 +2,23 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Home } from './components/router';
+import { Home, Movies, WatchList } from './components/router';
 
 const router = createBrowserRouter([
   {
     path: "/",
-  element: <Home testId='main' ></Home>}
+    element: <Home testId='main' ></Home>,
+    children: [
+      {
+        path: "movies",
+        element: <Movies></Movies>
+      },
+      {
+        path: "watchlist",
+        element: <WatchList></WatchList>
+      },
+    ]
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
