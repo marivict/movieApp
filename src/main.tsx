@@ -9,13 +9,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home testId='main' ></Home>,
     children: [
+      {index: true, element:<Movies/>},
       {
         path: "movies",
-        element: <Movies></Movies>
+        element: <Movies/>
       },
       {
         path: "watchlist",
-        element: <WatchList></WatchList>
+        element: <WatchList/>
       },
     ]
   },
