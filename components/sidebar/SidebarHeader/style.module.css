@@ -1,0 +1,28 @@
+.sidebarHeader {
+    background-color: #2548C6;
+    height: 90px;
+}
+
+.sidebarHeader :global .MuiBox-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sidebarHeader a {
+    display: flex;
+}
+
+.sidebarHeader svg {
+    color: white;
+    margin-right: 15px;
+}
+
+.sidebarHeader .TitleHeader {
+    color: white;
+}
+
+.sidebarHeader header {
+    height: 100%;
+}

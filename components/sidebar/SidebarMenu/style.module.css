@@ -1,0 +1,35 @@
+.sidebarMenu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sidebarMenu__icon__container :global .sidebarMenu__icon{
+    color:  #fff;
+    font-size: 40px;
+}
+
+.sidebarMenu.active {
+    background-color: #0b0b0b;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebarMenu.active :global .sidebarMenu__icon{
+    color:#2548C6;
+    transition: all 0.3s ease-out;
+}
+
+.sidebarMenu.active .sidebarMenu__link {
+    color:#2548C6!important;
+    transition: all 0.3s ease-in;
+}
+
+.sidebarMenu.active::before {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #2548C6;
+    position: absolute;
+    left: 0;
+    top:0;
+}

@@ -1,0 +1,11 @@
+.sidebarContainer {
+    padding: 0!important;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarBox {
+    border-radius: 30px;
+    overflow: hidden;
+}
