@@ -1,11 +1,15 @@
 .sidebarContainer {
-    padding: 0!important;
     margin-left: 30px;
+    margin-top: 30px;
     display: flex;
-    align-items: center;
+    background-color: #171E31;
+    border-radius: 20px;
+    padding: 30px;
+    height: 80vh;
 }
 
-.sidebarBox {
-    border-radius: 30px;
-    overflow: hidden;
-}
+/* .sidebarBox {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+} */

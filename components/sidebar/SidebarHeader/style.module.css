@@ -1,7 +1,3 @@
-.sidebarHeader {
-    background-color: #2548C6;
-    height: 90px;
-}
 
 .sidebarHeader :global .MuiBox-root {
     display: flex;
@@ -15,8 +11,7 @@
 }
 
 .sidebarHeader svg {
-    color: white;
-    margin-right: 15px;
+    font-size: 40px;
 }
 
 .sidebarHeader .TitleHeader {
