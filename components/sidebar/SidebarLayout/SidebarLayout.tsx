@@ -9,7 +9,7 @@ export const Sidebar = ({testId}: SidebarLayoutProps) => {
                 <Box className={`${style.sidebarBox}`}>
                     <SidebarHeader testId={testId} />
                     <SidebarNav testId={testId} />
-                    <SidebarLogin />
+                    <SidebarLogin testId={testId} imageUrl={"https://mui.com/static/images/avatar/1.jpg"} loginUrl="/"/>
                 </Box>
             </Grid2>)
 }
