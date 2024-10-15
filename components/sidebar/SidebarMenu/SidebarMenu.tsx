@@ -9,7 +9,7 @@ export const SidebarMenu = ({testId, icon, link}:SidebarMenuProps) => {
     const pathname = usePathname();
 
     return(
-        <Link href={link}>
+        <Link href={link} data-testid={`${testId}-sidebarMenu`}>
             <Box className={`${style.sidebarMenu} ${pathname === link ? style.active : ''}  ${icon ? style.sidebarMenu__icon__container: ""}`}>
                     {!!icon && icon}
             </Box>

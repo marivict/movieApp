@@ -5,7 +5,7 @@ import { SidebarLogin, SidebarNav } from "..";
 import { SidebarLayoutProps } from "./types";
 
 export const Sidebar = ({testId}: SidebarLayoutProps) => {
-    return(<Grid2  data-testid={testId} className={`${style.sidebarContainer}`}>
+    return(<Grid2  data-testid={`${testId}-sidebarLayout`} className={`${style.sidebarContainer}`}>
                 <Box className={`${style.sidebarBox}`}>
                     <SidebarHeader testId={testId} />
                     <SidebarNav testId={testId} />

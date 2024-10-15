@@ -1,10 +1,7 @@
 import { Box, Container, Link, Typography } from "@mui/material"
-import style from "./style.module.css";
+import style from "./sidebarHeader.module.css";
 import MovieIcon from '@mui/icons-material/Movie';
-
-export type SidebarHeaderProps = {
-    testId: string;
-}
+import { SidebarHeaderProps } from "./types";
 
 export const SidebarHeader = ({testId}: SidebarHeaderProps) => {
     return(
@@ -13,7 +10,6 @@ export const SidebarHeader = ({testId}: SidebarHeaderProps) => {
                     <Box>
                         <Link href={"#"} underline="none">
                             <MovieIcon fontSize="large" sx={{color:"#FC4747"}} />
-                            <Typography variant={"h4"} align="center" className={`${style.TitleHeader}`}></Typography>
                         </Link>
                     </Box>
             </header>
