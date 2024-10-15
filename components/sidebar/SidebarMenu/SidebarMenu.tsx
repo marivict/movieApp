@@ -1,15 +1,9 @@
 "use client";
 import { usePathname } from 'next/navigation';
 import { Box } from "@mui/material";
-import style from "./style.module.css";
+import style from "./sidebarMenu.module.css";
 import Link from "next/link";
-
-export type SidebarMenuProps = {
-    testId: string;
-    icon?: React.ReactNode;
-    link: string;
-}
-
+import { SidebarMenuProps } from './types';
 
 export const SidebarMenu = ({testId, icon, link}:SidebarMenuProps) => {
     const pathname = usePathname();

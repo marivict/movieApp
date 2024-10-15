@@ -5,10 +5,7 @@ import WindowIcon from '@mui/icons-material/Window';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import TheatersIcon from '@mui/icons-material/Theaters';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-
-export type SidebarNavProps = {
-    testId:string;
-}
+import { SidebarNavProps } from "./types";
 
 export const SidebarNav = ({testId}:SidebarNavProps) => {
     return(<Container className={`${style.SidebarNav}`} disableGutters>
