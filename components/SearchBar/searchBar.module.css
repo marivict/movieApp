@@ -1,0 +1,18 @@
+.searchBar__container {
+    width: 100%;
+}
+
+.searchBar input {
+    height: 60px;
+    font-size: 26px;
+}
+
+.searchBar input::placeholder {
+    color: gray;
+}
+
+.searchBar svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}

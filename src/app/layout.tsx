@@ -28,11 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Grid2 container>
-          <Sidebar testId={"sidebar"} ></Sidebar>
-          <Grid2 size={"grow"}>
-            <Grid2 container columns={2}>
-              <Grid2 size={12}><SearchBar /></Grid2>
+        <Grid2 container spacing={6} sx={{marginTop: "50px"}}>
+          <Grid2>
+            <Sidebar testId={"sidebar"} />
+          </Grid2>
+          <Grid2 size={10}>
+            <Grid2 container columns={2} direction={"column"}>
+              <Grid2 sx={{marginTop: "20px"}} size={12}><SearchBar /></Grid2>
               <Grid2 size={12}>{children}</Grid2>
             </Grid2>
           </Grid2>
