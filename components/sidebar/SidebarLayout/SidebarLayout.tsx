@@ -5,8 +5,8 @@ import { SidebarLogin, SidebarNav } from "..";
 import { SidebarLayoutProps } from "./types";
 
 export const Sidebar = ({testId}: SidebarLayoutProps) => {
-    return(<Grid2  data-testid={`${testId}-sidebarLayout`} className={`${style.sidebarContainer}`}>
-                <Box className={`${style.sidebarBox}`}>
+    return(<Grid2  data-testid={`${testId}-layout`} className={`${style.sidebarContainer}`}>
+                <Box>
                     <SidebarHeader testId={testId} />
                     <SidebarNav testId={testId} />
                     <SidebarLogin testId={testId} imageUrl={"https://mui.com/static/images/avatar/1.jpg"} loginUrl="/"/>

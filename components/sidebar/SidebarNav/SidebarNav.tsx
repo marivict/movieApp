@@ -8,7 +8,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import { SidebarNavProps } from "./types";
 
 export const SidebarNav = ({testId}:SidebarNavProps) => {
-    return(<Container className={`${style.SidebarNav}`} data-testId={`${testId}-sidebarNav`} disableGutters>
+    return(<Container className={`${style.SidebarNav}`} data-testId={`${testId}-nav`} disableGutters>
             <SidebarMenu testId={testId} icon={<WindowIcon className={"sidebarMenu__icon"}/>} link="/"/>
             <SidebarMenu testId={testId} icon={<TheatersIcon className={"sidebarMenu__icon"}/>} link="/watchlist" />
             <SidebarMenu testId={testId} icon={<LiveTvIcon className={"sidebarMenu__icon"}/>} link="/watchlist" />

@@ -5,7 +5,7 @@ import { SidebarHeaderProps } from "./types";
 
 export const SidebarHeader = ({testId}: SidebarHeaderProps) => {
     return(
-        <div data-testid={`${testId}-sidebarHeader`} className={`${style.sidebarHeader}`}>
+        <div data-testid={`${testId}-header`} className={`${style.sidebarHeader}`}>
              <header>
                     <Box>
                         <Link href={"#"} underline="none">
